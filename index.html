@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Nato</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#aprendiendo" onclick="seleccionar()">APRENDIENDO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpg" alt="">
+            </div>
+            <h1>Renato Pajares</h1>
+            <h2>Game Developer - Game Designer</h2> 
+            <div class="redes">
+                <a href="https://x.com/NatoEZK" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                <a href="https://www.instagram.com/renatopc24/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/renato-pajares-565b42314/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/Nat0EZK" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Renato Pajares.</span> Soy Programador de Videojuegos, Game Designer y Sound Designer en Gold Titan, un estudio de videojuegos en Perú. Me apasiona crear experiencias de juego únicas, combinando mi habilidad técnica con el diseño creativo. En Gold Titan, he participado en diversos proyectos, siempre buscando innovar y mejorar.</p>
+            <h1>¿Porque me gustan hacer videojuegos?</h1>
+            <p><span>Me gusta porque es una de mis grandes pasiones.</span>  Claramente, jugar videojuegos y crearlos son procesos completamente diferentes, pero así como los videojuegos me han ayudado a divertirme y a superar malos momentos, quiero retribuir esa ayuda a los demás con los videojuegos que desarrolle. La sensación de que una persona se lo esté pasando bien con algo que tú creaste es algo único</p>
+
+            
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24-12-2002
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            natopcezk@gmail.com
+                        </li>
+                        <li>
+                            <strong>País</strong>
+                            Lima, Perú
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span class="programmer">GAME PROGRAMMER & GAME DESIGNER</span> 
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="files/CV.pdf" download="Renato_Pajares_CV.pdf" target="_blank" class="download-btn">
+                <button>
+                    Descargar CV <i class="fa-solid fa-download"></i>
+                    <span class="overlay"></span>
+                </button>
+            </a>
+            
+        </div>
+    </section>
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Motores y Herramientas</h3>
+                    <div class="skill">
+                        <span>Unity 2D</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Unity 3D</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Illustrator</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DoTween</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resolución de Problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>Portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/lostpride.svg" alt="">
+                    <div class="overlay">
+                        <h3>Lost Pride</h3>
+                        <p>Aventura</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección Aprendiendo -->
+<section id="aprendiendo">
+    <h2>Aprendiendo</h2>
+    <p class="introduccion">
+        Motores y herramientas que actualmente estoy aprendiendo para expandir mis habilidades y conocimientos en la industria del desarrollo de videojuegos.
+    </p>
+    <div class="habilidades-container">
+        <div class="habilidad">
+            <div class="imagen-container">
+                <img src="img/logo-unreal.svg" alt="Unreal Engine Logo">
+            </div>
+            <span>Unreal Engine</span>
+        </div>
+        <div class="habilidad">
+            <div class="imagen-container">
+                <img src="img/logo-godot.png" alt="Godot Logo">
+            </div>
+            <span>Godot</span>
+        </div>
+        <div class="habilidad">
+            <div class="imagen-container">
+                <img src="img/logo-sql.png" alt="SQL Logo">
+            </div>
+            <span>SQL</span>
+        </div>
+        <div class="habilidad">
+            <div class="imagen-container">
+                <img src="img/logo-unity.png" alt="Unity Logo">
+            </div>
+            <span>Shader Graph</span>
+        </div>
+        <div class="habilidad">
+            <div class="imagen-container">
+                <img src="img/logo-unity.png" alt="Unity Logo">
+            </div>
+            <span>Unity Editor</span>
+        </div>
+        <div class="habilidad">
+            <div class="imagen-container">
+                <img src="img/logo-unity.png" alt="Unity Logo">
+            </div>
+            <span>Unity 3D</span>
+        </div>
+    </div>
+</section>
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="https://x.com/NatoEZK" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/renatopc24/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/renato-pajares-565b42314/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="https://github.com/Nat0EZK" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
