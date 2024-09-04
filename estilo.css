@@ -371,62 +371,82 @@ html{
 }
 
 /* SECCION PORTFOLIO */
-.portfolio{
+.portfolio {
     background-color: #292929;
     color: #fff;
     padding: 50px 20px;
 }
-.portfolio .contenido-seccion{
+
+.portfolio .contenido-seccion {
     max-width: 1100px;
     margin: auto;
 }
-.portfolio h2{
+
+.portfolio h2 {
     font-size: 48px;
     font-family: 'Righteous';
     text-align: center;
     padding: 20px 0;
 }
-.portfolio .galeria{
+
+.portfolio .galeria {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
-.portfolio .galeria .proyecto{
+
+.portfolio .galeria .proyecto {
     position: relative;
     max-width: 340px;
-    height: fit-content;
     margin: 10px;
-    cursor: pointer;
+    display: block; /* Asegura que el contenedor <a> se comporte como un bloque */
+    overflow: hidden; /* Asegura que la superposición no se salga del contenedor */
+    text-decoration: none; /* Elimina el subrayado del enlace */
 }
-.portfolio .galeria .proyecto img{
+
+.portfolio .galeria .proyecto img {
     width: 100%;
     display: block;
+    transition: transform 0.3s ease; /* Agrega una transición suave al hover */
 }
-.portfolio .galeria .proyecto .overlay{
+
+.portfolio .galeria .proyecto:hover img {
+    transform: scale(1.05); /* Escala la imagen ligeramente al pasar el mouse */
+}
+
+.portfolio .galeria .proyecto .overlay {
     position: absolute;
     top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28,182,152,.8), rgba(28,182,152,.8));
+    background: linear-gradient(rgba(28, 182, 152, 0.8), rgba(28, 182, 152, 0.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 1s;
-    font-size: 18px;
-    letter-spacing: 3px;
+    align-items: center; /* Centra el contenido verticalmente */
+    transition: opacity 0.5s ease; /* Cambia la transición a opacity */
     opacity: 0;
+    color: #fff;
+    padding: 20px; /* Agrega padding para un mejor espaciado */
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho y alto */
 }
-.portfolio .galeria .proyecto .overlay h3{
-    margin-bottom: 20px;
-    transition: 1s;
+
+.portfolio .galeria .proyecto:hover .overlay {
+    opacity: 1; /* Muestra la superposición al pasar el mouse */
 }
-.portfolio .galeria .proyecto .overlay:hover{
-    opacity: 1;
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 10px; /* Ajusta el margen inferior */
+    font-size: 24px; /* Tamaño de fuente para el título */
 }
-.portfolio .galeria .proyecto .overlay:hover h3{
-    margin-bottom: 0px;
+
+.portfolio .galeria .proyecto .overlay p {
+    font-size: 18px; /* Tamaño de fuente para la descripción */
+    margin: 0; /* Elimina el margen por defecto */
 }
+
 
 #aprendiendo {
     text-align: center;

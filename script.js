@@ -1,25 +1,27 @@
 let menuVisible = false;
-//Función que oculta o muestra el menu
-function mostrarOcultarMenu(){
-    if(menuVisible){
-        document.getElementById("nav").classList ="";
+
+// Función que oculta o muestra el menú
+function mostrarOcultarMenu() {
+    if (menuVisible) {
+        document.getElementById("nav").classList = "";
         menuVisible = false;
-    }else{
-        document.getElementById("nav").classList ="responsive";
+    } else {
+        document.getElementById("nav").classList = "responsive";
         menuVisible = true;
     }
 }
 
-function seleccionar(){
-    //oculto el menu una vez que selecciono una opcion
+// Función que oculta el menú una vez que selecciono una opción
+function seleccionar() {
     document.getElementById("nav").classList = "";
     menuVisible = false;
 }
-//Funcion que aplica las animaciones de las habilidades
-function efectoHabilidades(){
+
+// Función que aplica las animaciones de las habilidades
+function efectoHabilidades() {
     var skills = document.getElementById("skills");
     var distancia_skills = window.innerHeight - skills.getBoundingClientRect().top;
-    if(distancia_skills >= 300){
+    if (distancia_skills >= 300) {
         let habilidades = document.getElementsByClassName("progreso");
         habilidades[0].classList.add("unity2d");
         habilidades[1].classList.add("unity3d");
@@ -34,6 +36,7 @@ function efectoHabilidades(){
     }
 }
 
+// Función que anima las habilidades en la sección de Aprendiendo
 function animarAprendiendo() {
     var aprendiendo = document.getElementById("aprendiendo");
     var distancia_aprendiendo = window.innerHeight - aprendiendo.getBoundingClientRect().top;
@@ -48,12 +51,30 @@ function animarAprendiendo() {
     }
 }
 
+// Maneja el scroll y la animación de las habilidades
 window.onscroll = function() {
     animarAprendiendo();
-};
-
-
-//detecto el scrolling para aplicar la animacion de la barra de habilidades
-window.onscroll = function(){
     efectoHabilidades();
-} 
+}
+
+// Función para manejar el clic en las imágenes del portafolio
+function manejarClicPortafolio(event) {
+    // Prevenir el comportamiento por defecto si es necesario
+    // event.preventDefault(); 
+
+    // Obtener el enlace del contenedor del proyecto
+    const enlace = event.currentTarget.dataset.enlace;
+
+    if (enlace) {
+        window.open(enlace, '_blank');
+    }
+}
+
+// Añadir el manejador de clic a las imágenes del portafolio
+document.addEventListener('DOMContentLoaded', function() {
+    const proyectos = document.querySelectorAll('.portfolio .proyecto');
+
+    proyectos.forEach(proyecto => {
+        proyecto.addEventListener('click', manejarClicPortafolio);
+    });
+});
