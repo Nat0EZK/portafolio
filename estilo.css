@@ -111,6 +111,23 @@ html{
     color: #fff;
     padding: 50px 20px;
 }
+.sobremi-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Espacio entre imagen y texto */
+}
+
+.sobremi-img {
+    flex: 1; /* La imagen ocupará un tercio del ancho del contenedor */
+    max-width: 30%; /* Limita el tamaño máximo de la imagen */
+}
+
+.sobremi-img img {
+    width: 100%;
+    border-radius: 10px; /* Redondea bordes para un estilo agradable */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
 .sobremi .contenido-seccion{
     max-width: 1100px;
     margin: auto;
