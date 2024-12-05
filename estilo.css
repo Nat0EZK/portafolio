@@ -29,7 +29,7 @@ html{
 .contenedor-header header .logo a{
     font-family: 'Righteous';
     font-size: 36px;
-    color: #eec643;
+    color: #EA8984;
     text-decoration: none;
 }
 .contenedor-header header ul{
@@ -45,7 +45,7 @@ html{
     text-decoration: none;
 }
 .contenedor-header header nav ul li a:hover{
-    color: #eec643;
+    color: #EA8984;
 }
 .nav-responsive{
     background-color: #1CB698;
@@ -75,7 +75,7 @@ html{
 }
 .inicio .contenido-banner img{
     margin-top: 40px;
-    border: 10px solid #eec643;
+    border: 10px solid #EA8984;
     display: block;
     width: 80%;
     margin: auto;
@@ -104,7 +104,39 @@ html{
     transition: .3s;
 }
 .inicio .contenido-banner .redes a:hover{
-    background-color: #eec643;
+    background-color: #EA8984;
+}
+.sobremi .contenido-seccion {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.sobremi .fila {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px; /* Espacio entre avatar y contenido */
+}
+
+.sobremi .col {
+    flex: 1;
+}
+
+.sobremi .avatar {
+    flex: 0.3; /* El avatar ocupa el 30% del ancho */
+    text-align: center;
+}
+
+.sobremi .avatar img {
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo del avatar */
+    border-radius: 10px;
+    margin-top: -65px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}
+
+.sobremi .contenido {
+    flex: 0.7; /* El contenido principal ocupa el 70% restante */
 }
 .sobremi{
     background-color: #141414;
@@ -145,7 +177,7 @@ html{
     margin-bottom: 20px;
 }
 .sobremi .contenido-seccion p span{
-    color: #eec643;
+    color: #EA8984;
     font-weight: bold;
 }
 .sobremi .fila{
@@ -168,7 +200,7 @@ html{
 }
 .sobremi .fila .col ul li strong{
     display: inline-block;
-    color: #eec643;
+    color: #EA8984;
     width: 130px;
 }
 .sobremi .fila .col ul li span {
@@ -178,7 +210,8 @@ html{
 }
 
 .sobremi .fila .col ul li span.programmer {
-    background-color: #ffc400;/* Color para GAME PROGRAMMER */
+    font-size: 14px;
+    background-color: #C2625E;/* Color para GAME PROGRAMMER */
 }
 
 
@@ -198,7 +231,7 @@ html{
     justify-content: center;
     transition: .3s;
 }.sobremi .fila .col .contenedor-intereses .interes:hover{
-    background-color: #eec643;
+    background-color: #EA8984;
 }
 .sobremi .fila .col .contenedor-intereses .interes i{
     font-size: 30px;
@@ -228,7 +261,7 @@ html{
     left: 0;
     width: 0;
     height: 100%;
-    background-color: #eec643;
+    background-color: #EA8984;
     z-index: -1;
     transition: 1s;
 }
@@ -278,7 +311,7 @@ html{
     margin-bottom: 30px;
 }
 .skills .skill .progreso{
-    background-color: #eec643;
+    background-color: #EA8984;
     position: absolute;
     top: 0;
     left: 0;
@@ -288,7 +321,7 @@ html{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #eec643;
+    background-color: #EA8984;
     border-radius: 50px;
     line-height: 40px;
     text-align: center;
@@ -438,7 +471,7 @@ html{
     width: 100%;
     height: 100%;
     text-align: center;
-    background: linear-gradient(rgba(28, 182, 152, 0.8), rgba(28, 182, 152, 0.8));
+    background: linear-gradient(rgba(234, 125, 125, 0.8), rgba(234, 125, 125, 0.8));
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -522,7 +555,7 @@ html{
 }
 
 .habilidad:hover .imagen-container {
-    background-color: #eec643;
+    background-color: #EA8984;
     transform: scale(1.1);
 }
 
@@ -566,7 +599,7 @@ footer .arriba{
     display: block;
     width: 50px;
     height: 50px;
-    background-color: #eec643;
+    background-color: #EA8984;
     color: #fff;
     position: absolute;
     left: 50%;
