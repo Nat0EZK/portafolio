@@ -17,11 +17,18 @@
             </div>
             <nav id="nav">
                 <ul>
-                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
-                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#inicio" onclick="seleccionar()">HOME</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">ABOUT ME</a></li>
                     <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
                     <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
-                    <li><a href="#aprendiendo" onclick="seleccionar()">APRENDIENDO</a></li>
+                    <li><a href="#aprendiendo" onclick="seleccionar()">LEARNING</a></li>
+                     <!-- <li class="dropdown">
+                        <a href="#" onclick="toggleLanguageDropdown()">IDIOMA</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#" onclick="changeLanguage('es')">Español</a></li>
+                            <li><a href="#" onclick="changeLanguage('en')">English</a></li>
+                        </ul>
+                    </li>-->
                 </ul>
             </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
@@ -34,7 +41,7 @@
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
-                <img src="img/hero.jpg" alt="">
+                <img src="img/fotoperfil.svg" alt="">
             </div>
             <h1>Renato Pajares</h1>
             <h2>Game Developer - Game Designer</h2> 
@@ -58,29 +65,29 @@
             </div>
             <!-- Columna del contenido principal -->
             <div class="col contenido">
-                <p><span>Hola, soy Renato Pajares.</span> Soy Programador de Videojuegos, Game Designer y Sound Designer en Gold Titan, un estudio de videojuegos en Perú. Me apasiona crear experiencias de juego únicas, combinando mi habilidad técnica con el diseño creativo. En Gold Titan, he participado en diversos proyectos, siempre buscando innovar y mejorar.</p>
-                <h1>¿Porque me gustan hacer videojuegos?</h1>
-                <p><span>Me gusta porque es una de mis grandes pasiones.</span>  Claramente, jugar videojuegos y crearlos son procesos completamente diferentes, pero así como los videojuegos me han ayudado a divertirme y a superar malos momentos, quiero retribuir esa ayuda a los demás con los videojuegos que desarrolle. La sensación de que una persona se lo esté pasando bien con algo que tú creaste es algo único</p>
+                <p><span>Hello, I'am Renato Pajares.</span> I’m a Video Game Programmer, Game Designer, and Sound Designer at Gold Titan, a video game studio in Peru. I'm passionate about creating unique gaming experiences, combining my technical skills with creative design. At Gold Titan, I have participated in various projects, always striving to innovate and improve.</p>
+                <h1>Why do I like making video games??</h1>
+                <p><span>I like it because it's one of my greatest passions.</span>  Clearly, playing video games and making them are completely different processes, but just as video games have helped me have fun and overcome tough moments, I want to give back that help to others through the games I develop. The feeling of someone enjoying something you created is truly unique.</p>
 
                 <div class="fila">
                     <!-- Datos personales -->
                     <div class="col">
-                        <h3>Datos Personales</h3>
+                        <h3>Personal Information</h3>
                         <ul>
                             <li>
-                                <strong>Edad</strong>
-                                21
+                                <strong>Age</strong>
+                                22
                             </li>
                             <li>
                                 <strong>Email</strong>
                                 natopcezk@gmail.com
                             </li>
                             <li>
-                                <strong>País</strong>
+                                <strong>Country</strong>
                                 Lima, Perú
                             </li>
                             <li>
-                                <strong>Cargos</strong>
+                                <strong>Roles</strong>
                                 <span class="programmer">GAME PROGRAMMER</span> 
                             </li>
                             <li>
@@ -92,23 +99,23 @@
 
                     <!-- Intereses -->
                     <div class="col">
-                        <h3>Intereses</h3>
+                        <h3>Interests</h3>
                         <div class="contenedor-intereses">
                             <div class="interes">
                                 <i class="fa-solid fa-gamepad"></i>
-                                <span>JUEGOS</span>
+                                <span>GAMES</span>
                             </div>
                             <div class="interes">
                                 <i class="fa-solid fa-headphones"></i>
-                                <span>MUSICA</span>
+                                <span>MUSIC</span>
                             </div>
                             <div class="interes">
                                 <i class="fa-solid fa-plane"></i>
-                                <span>VIAJAR</span>
+                                <span>TRAVELING</span>
                             </div>
                             <div class="interes">
                                 <i class="fa-solid fa-person-hiking"></i>
-                                <span>DEPORTE</span>
+                                <span>SPORTS</span>
                             </div>
                         </div>
                     </div>
@@ -116,7 +123,7 @@
 
                 <a href="files/CV.pdf" download="Renato_Pajares_CV.pdf" target="_blank" class="download-btn">
                     <button>
-                        Descargar CV <i class="fa-solid fa-download"></i>
+                        Download CV <i class="fa-solid fa-download"></i>
                         <span class="overlay"></span>
                     </button>
                 </a>
@@ -131,7 +138,7 @@
             <div class="fila">
                 <!-- Technical Skill -->
                 <div class="col">
-                    <h3>Motores y Herramientas</h3>
+                    <h3>Engines and Tools</h3>
                     <div class="skill">
                         <span>Unity 2D</span>
                         <div class="barra-skill">
@@ -175,9 +182,9 @@
                 </div>
                 <!-- Professional Skills -->
                 <div class="col">
-                    <h3>Habilidades Blandas</h3>
+                    <h3>Soft Skills</h3>
                     <div class="skill">
-                        <span>Comunicación</span>
+                        <span>Communication</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>90%</span>
@@ -185,7 +192,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Trabajo en Equipo</span>
+                        <span>Teamwork</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
@@ -193,7 +200,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Creatividad</span>
+                        <span>Creativity</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>80%</span>
@@ -201,7 +208,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Dedicación</span>
+                        <span>Dedication</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>100%</span>
@@ -209,7 +216,7 @@
                         </div>
                     </div>
                     <div class="skill">
-                        <span>Resolución de Problemas</span>
+                        <span>Problem-Solving</span>
                         <div class="barra-skill">
                             <div class="progreso">
                                 <span>90%</span>
@@ -224,13 +231,33 @@
     <!-- SECCION PORTFOLIO -->
     <section id="portfolio" class="portfolio">
         <div class="contenido-seccion">
-            <h2>Portafolio</h2>
+            <h2>Portfolio</h2>
             <div class="galeria">
                 <div class="proyecto" data-enlace="https://itch.io/embed-upload/11190617?color=ffffff">
                     <img src="img/lostpride.svg" alt="">
                     <div class="overlay">
                         <h3>Lost Pride</h3>
-                        <p>Aventura</p>
+                        <p>Adventure</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="proyecto" data-enlace="https://itch.io/embed-upload/12335183?color=ffffff">
+                    <img src="img/silentmorgue.svg" alt="">
+                    <div class="overlay">
+                        <h3>The Silent Morgue</h3>
+                        <p>Simulation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="galeria">
+                <div class="proyecto" data-enlace="https://itch.io/embed-upload/12638139?color=ffffff">
+                    <img src="img/bubblerondo.gif" alt="">
+                    <div class="overlay">
+                        <h3>Bubble Rondo</h3>
+                        <p>Arcade</p>
                     </div>
                 </div>
             </div>
@@ -240,9 +267,9 @@
     
     <!-- Sección Aprendiendo -->
 <section id="aprendiendo">
-    <h2>Aprendiendo</h2>
+    <h2>Learning</h2>
     <p class="introduccion">
-        Motores y herramientas que actualmente estoy aprendiendo para expandir mis habilidades y conocimientos en la industria del desarrollo de videojuegos.
+        Engines and tools I'm currently learning to expand my skills and knowledge in the video game development industry.
     </p>
     <div class="habilidades-container">
         <div class="habilidad">

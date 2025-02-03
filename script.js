@@ -70,6 +70,22 @@ function manejarClicPortafolio(event) {
     }
 }
 
+//function toggleLanguageDropdown() {
+    //const dropdownMenu = document.querySelector('.dropdown-menu');
+    //dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+//}
+
+//function changeLanguage(lang) {
+    // Aquí podrías cargar traducciones dinámicamente o cambiar contenido estático.
+    //if (lang === 'es') {
+       // alert('Idioma cambiado a Español.');
+        // Aquí puedes agregar lógica para traducir tu página al español.
+    //} else if (lang === 'en') {
+        //alert('Language changed to English.');
+        // Aquí puedes agregar lógica para traducir tu página al inglés.
+   // }
+//}
+
 // Añadir el manejador de clic a las imágenes del portafolio
 document.addEventListener('DOMContentLoaded', function() {
     const proyectos = document.querySelectorAll('.portfolio .proyecto');
