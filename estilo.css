@@ -619,6 +619,171 @@ footer .arriba{
     line-height: 50px;
     font-size: 18px;
 }
+/* ===================================== */
+/* ESTILOS PARA LA PÁGINA DE DETALLE DEL PROYECTO */
+/* ===================================== */
+
+.detalle-juego {
+    /* Padding superior para evitar que el menú fijo tape el contenido */
+    padding: 100px 20px 50px 20px; 
+    background-color: #141414; /* Fondo principal oscuro */
+    color: #fff;
+    min-height: 100vh;
+}
+
+.contenido-detalle {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 40px; /* Espacio entre las dos columnas */
+    align-items: flex-start;
+}
+
+/* Contenedores de las dos columnas */
+.media-container, .info-container {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #292929; /* Color de fondo secundario */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Sombra elegante */
+}
+
+.media-container {
+    flex: 2; /* AHORA OCUPA EL 40% (2 partes) */
+    order: 2; /* Columna de media a la derecha en escritorio */
+}
+
+.info-container {
+    flex: 3; /* AHORA OCUPA EL 60% (3 partes) */
+    order: 1; /* Columna de info a la izquierda en escritorio */
+}
+
+/* Estilos de Tipografía e Información */
+#detalle-titulo {
+    font-family: 'Righteous';
+    color: #EA8984; /* Color de acento */
+    font-size: 3.5em;
+    margin-bottom: 25px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.info-bloque {
+    margin-bottom: 35px;
+}
+
+.info-bloque h3 {
+    font-family: 'Righteous';
+    font-size: 1.4em;
+    color: #fff;
+    border-left: 4px solid #EA8984; /* Barra de color de acento para destacar */
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.info-bloque p, .info-bloque ul {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-left: 0;
+}
+
+.info-bloque ul {
+    list-style-type: none; /* Quitamos los puntos de lista predeterminados */
+    padding-left: 0;
+}
+.info-bloque ul li {
+    /* Usamos viñeta personalizada con color de acento */
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 8px;
+}
+.info-bloque ul li::before {
+    content: "\2022"; /* Código Unicode para un punto/viñeta */
+    color: #EA8984; /* Usamos el color de acento */
+    font-size: 1.2em;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    position: absolute;
+    left: 0;
+}
+
+/* Galería de Media */
+.media-container h2 {
+    font-family: 'Righteous';
+    color: #EA8984;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.galeria-detalle img, .galeria-detalle iframe {
+    width: 100%;
+    height: auto;
+    min-height: 250px; /* Altura mínima para una mejor visualización */
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Botones */
+.jugar-btn, .back-link {
+    display: block; 
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.jugar-btn button {
+    cursor: pointer;
+    background-color: #EA8984;
+    color: #141414;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    font-weight: 800; 
+    border-radius: 5px;
+    width: 100%;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.jugar-btn button:hover {
+    background-color: #C2625E; 
+    transform: translateY(-2px);
+}
+
+.back-link button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #555;
+    color: #fff;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.back-link button:hover {
+    background-color: #555;
+    border-color: #EA8984;
+}
+
+/* Responsive para móviles */
+@media screen and (max-width: 768px) {
+    .contenido-detalle {
+        flex-direction: column; /* Apila las columnas */
+    }
+    
+    .media-container, .info-container {
+        flex: auto;
+        width: 100%;
+        order: initial; /* Info primero, media después. */
+    }
+
+    #detalle-titulo {
+        font-size: 2.5em;
+    }
+}
 /* SECCION RESPONSIVE */
 @media screen and (max-width:980px){
     nav{

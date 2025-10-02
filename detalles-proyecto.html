@@ -3,11 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="game-title">Detalle del Proyecto</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title id="game-title">Detalle del Proyecto | Portfolio</title>
     <link rel="stylesheet" href="estilo.css"> 
-    
-    </head>
+</head>
 <body>
     <div class="contenedor-header">
         <header>
@@ -15,7 +13,14 @@
                 <a href="index.html">Nato</a>
             </div>
             <nav id="nav">
-                </nav>
+                <ul>
+                    <li><a href="index.html#inicio">HOME</a></li>
+                    <li><a href="index.html#sobremi">ABOUT ME</a></li>
+                    <li><a href="index.html#skills">SKILLS</a></li>
+                    <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                    <li><a href="index.html#aprendiendo">LEARNING</a></li>
+                </ul>
+            </nav>
             <div class="nav-responsive" onclick="mostrarOcultarMenu()">
                 <i class="fa-solid fa-bars"></i>
             </div>
@@ -24,7 +29,7 @@
 
     <section id="detalle-juego" class="detalle-juego">
         <div class="contenido-detalle">
-            
+
             <div class="info-container">
                 <h1 id="detalle-titulo">Título del Juego</h1>
                 
@@ -39,36 +44,42 @@
                 </div>
 
                 <div class="info-bloque">
-                    <h3>Assignments (Tareas)</h3>
+                    <h3>Assignments</h3>
                     <ul id="detalle-tareas">
                         </ul>
                 </div>
                 
                 <div class="info-bloque">
-                    <h3>Language Available</h3>
-                    <p id="detalle-lenguaje">Cargando lenguajes...</p>
+                    <h3>Engine</h3>
+                    <p id="detalle-engine">Cargando motor...</p>
+                </div>
+                
+                <div class="info-bloque">
+                    <h3>Languages Available</h3>
+                    <p id="detalle-idiomas">Cargando idiomas...</p>
                 </div>
                 
                 <a href="#" target="_blank" class="jugar-btn" id="jugar-btn">
-                    <button>Jugar Ahora →</button>
+                    <button>Try Now</button>
                 </a>
             </div>
 
             <div class="media-container">
                 <h2>Media</h2>
                 <div class="galeria-detalle" id="galeria-detalle">
-                    </div>
+                    <p>Cargando contenido multimedia...</p> 
+                </div>
                 <a href="index.html#portfolio" class="back-link">
                     <button>← Volver al Portfolio</button>
                 </a>
             </div>
-
+            
         </div>
     </section>
 
     <footer>
         </footer>
     
-    <script src="script.js"></script> <script src="detalle.js"></script> 
-</body>
+    <script src="detalle.js"></script> 
+    </body>
 </html>
