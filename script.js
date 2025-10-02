@@ -57,40 +57,4 @@ window.onscroll = function() {
     efectoHabilidades();
 }
 
-// Función para manejar el clic en las imágenes del portafolio
-function manejarClicPortafolio(event) {
-    // Prevenir el comportamiento por defecto si es necesario
-    // event.preventDefault(); 
-
-    // Obtener el enlace del contenedor del proyecto
-    const enlace = event.currentTarget.dataset.enlace;
-
-    if (enlace) {
-        window.open(enlace, '_blank');
-    }
-}
-
-//function toggleLanguageDropdown() {
-    //const dropdownMenu = document.querySelector('.dropdown-menu');
-    //dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-//}
-
-//function changeLanguage(lang) {
-    // Aquí podrías cargar traducciones dinámicamente o cambiar contenido estático.
-    //if (lang === 'es') {
-       // alert('Idioma cambiado a Español.');
-        // Aquí puedes agregar lógica para traducir tu página al español.
-    //} else if (lang === 'en') {
-        //alert('Language changed to English.');
-        // Aquí puedes agregar lógica para traducir tu página al inglés.
-   // }
-//}
-
-// Añadir el manejador de clic a las imágenes del portafolio
-document.addEventListener('DOMContentLoaded', function() {
-    const proyectos = document.querySelectorAll('.portfolio .proyecto');
-
-    proyectos.forEach(proyecto => {
-        proyecto.addEventListener('click', manejarClicPortafolio);
-    });
-});
+// NOTA: Se eliminó la función manejarClicPortafolio y su event listener.

@@ -55,36 +55,7 @@ html{
     cursor: pointer;
     display: none;
 }
-/*
-.dropdown {
-    position: relative;
-}
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    z-index: 1000;
-}
-
-.dropdown-menu li {
-    padding: 10px;
-    cursor: pointer;
-}
-
-.dropdown-menu li:hover {
-    background-color: #f0f0f0;
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-*/
-    
 /* SECCION I N I C I O */
 .inicio{
     background: linear-gradient(to top, rgba(30,35,38,.8), rgba(30,35,38,1)),
@@ -450,7 +421,7 @@ html{
     100%{width: 90%;}
 }
 
-/* SECCION PORTFOLIO */
+/* SECCION PORTFOLIO - CÓDIGO ACTUALIZADO */
 .portfolio {
     background-color: #292929;
     color: #fff;
@@ -469,25 +440,34 @@ html{
     padding: 20px 0;
 }
 
+/* 🔄 CAMBIO CLAVE: Usamos Flexbox para la cuadrícula */
 .portfolio .galeria {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea */
+    justify-content: space-between; /* Distribuye el espacio entre los proyectos */
+    gap: 20px; /* Espacio entre los proyectos */
+    /* Anulamos la clase .galeria del HTML que venía repetida. */
+    /* Para esto, ¡también necesitas hacer un pequeño ajuste en tu HTML! (ver abajo) */
 }
 
+/* 📐 CAMBIO CLAVE: Definimos el ancho para que quepan 3 por fila */
 .portfolio .galeria .proyecto {
     position: relative;
-    max-width: 340px;
-    margin: 10px;
-    display: block; /* Asegura que el contenedor <a> se comporte como un bloque */
-    overflow: hidden; /* Asegura que la superposición no se salga del contenedor */
-    text-decoration: none; /* Elimina el subrayado del enlace */
+    /* Calculamos el ancho: 100% / 3 (proyectos) menos el espacio (gap) */
+    width: calc(33.333% - 13.333px); /* 13.333px es (20px * 2) / 3 */
+    margin: 0; /* Eliminamos el margen para usar el gap del contenedor */
+    display: block; 
+    overflow: hidden; 
+    text-decoration: none; 
+    box-sizing: border-box; /* Fundamental para que width y padding funcionen bien */
 }
 
 .portfolio .galeria .proyecto img {
-    width: 100%;
+    width: 100%; /* Ocupa todo el ancho del contenedor del proyecto */
+    height: 250px; /* **Altura fija para todas las imágenes** */
     display: block;
-    transition: transform 0.3s ease; /* Agrega una transición suave al hover */
+    object-fit: cover; /* **Corta la imagen para cubrir el espacio sin distorsionarla** */
+    transition: transform 0.3s ease;
 }
 
 .portfolio .galeria .proyecto:hover img {
